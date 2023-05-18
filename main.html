@@ -10,11 +10,18 @@
     <script type="text/javascript" src="./script.js"></script>
 
     <h1>Feedback Form</h1>
-    <form action="" method="post">
+    <form action="" method="get">
       <!-- 1.name -->
       <div>
         <label for="name">Name </label>
-        <input type="text" name="name" id="name" required />
+        <input
+          type="text"
+          name="name"
+          id="name"
+          required
+          minlength="3"
+          maxlength="50"
+        />
       </div>
       <br />
       <!-- 2.potfolio(url) -->
