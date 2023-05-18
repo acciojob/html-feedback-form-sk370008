@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <body>
+    <!-- the entire body must be written by student -->
+    <script type="text/javascript" src="./script.js"></script>
 
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
+    <h1>Feedback Form</h1>
+    <form action="" method="post">
+      <!-- 1.name -->
+      <div>
+        <label for="name">Name </label>
+        <input type="text" name="name" id="name" required />
+      </div>
+      <br />
+      <!-- 2.potfolio(url) -->
+      <div>
+        <label for="portfolio">Portfolio</label>
+        <input type="url" name="portfolio" id="portfolio" required />
+      </div>
+      <br />
+      <!-- 3.favColor(colorpicker) -->
+      <div>
+        <label for="favColor">Choose your favorite color:</label>
+        <input type="color" name="favColor" id="favColor" required />
+      </div>
+      <br />
+      <!-- 4.likeness(slider) -->
+      <div>
+        <label for="likeness">Likeness:</label>
+        <input
+          type="range"
+          name="likeness"
+          id="likeness"
+          min="1"
+          max="100"
+          required
+        />
+      </div>
+    </form>
+  </body>
 </html>
